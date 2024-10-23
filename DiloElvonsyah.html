@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil DILO ELVONSYAH</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="dilo.jpg" alt="Foto Diri" class="profile-pic">
+    <h1>PROFIL DILO ELVONSYAH</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#" onclick="showContent('biodata')">Biodata</a></li>
+      <li><a href="#" onclick="showContent('pendidikan')">Pendidikan</a></li>
+      <li><a href="#" onclick="showContent('pengalaman')">Pengalaman</a></li>
+      <li><a href="#" onclick="showContent('keahlian')">Keahlian</a></li>
+      <li><a href="#" onclick="showContent('publikasi')">Publikasi</a></li>
+    </ul>
+  </nav>
+
+  <section id="content">
+    <div id="biodata">
+      <h2>Biodata</h2>
+      <p><strong>NIM:</strong> 2023081025</p>
+      <p><strong>Nama:</strong> Dilo Elvonsyah</p>
+      <p><strong>Agama:</strong> Islam</p>
+      <p><strong>Tanggal Lahir:</strong> 28 Mei 2005</p>
+      <p><strong>Tempat Lahir:</strong> Tangerang</p>
+    </div>
+    
+    <div id="pendidikan" class="hidden">
+      <h2>Pendidikan</h2>
+      <ul>
+        <li>TK An-Nur, Tahun 2011</li>
+        <li>SD NEGERI PONDOK JAGUNG 1, Tahun 2017</li>
+        <li>SMP NEGERI 1 TANGERANG SELATAN, Tahun 2020</li>
+        <li>SMA NEGERI 7 TANGERANG SELATAN, Tahun 2023</li>
+      </ul>
+    </div>
+
+    <div id="pengalaman" class="hidden">
+      <h2>Pengalaman</h2>
+    </div>
+
+    <div id="keahlian" class="hidden">
+      <h2>Keahlian</h2>
+      <ul>
+        <li>Web Desain</li>
+        <li>Perancangan UI/UX</li>
+        <li>Kelancaran dalam berbahasa Inggris</li>
+      </ul>
+    </div>
+
+    <div id="publikasi" class="hidden">
+      <h2>Publikasi</h2>
+      <p>Publikasi belum tersedia.</p>
+    </div>
+  </section>
+
+  <aside>
+    <h2>Hobi</h2>
+    <ul>
+      <li>Voli</li>
+      <li>Bola</li>
+      <li>Pemrograman</li>
+    </ul>
+  </aside>
+
+  <footer>
+    <div class="social">
+      <p>Instagram: @dil.elv</p>
+      <p>Discord: dilelv</p>
+    </div>
+    <p class="center-text">&copy; 2020. All Rights Reserved</p>
+    <div class="web-info">
+      <p><strong>WEB PIBS</strong><br><small>Dibuat untuk memenuhi Ujian Tengah Semester Matakuliah PIBS</small></p>
+    </div>
+  </footer>
+
+  <script>
+    function showContent(id) {
+      const sections = document.querySelectorAll('section > div');
+      sections.forEach(section => section.classList.add('hidden'));
+      document.getElementById(id).classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
